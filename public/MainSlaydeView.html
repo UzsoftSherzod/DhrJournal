@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/1son2018.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/2son2018.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/3son2018.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/4son2018.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/1son2019.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/2son2019.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/3son2019.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/4son2019.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/1son2020.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/2son2020.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/3son2020.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/4son2020.jpg" alt=""></div>
+    </div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+</div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop:true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+
+</body>
+</html>
